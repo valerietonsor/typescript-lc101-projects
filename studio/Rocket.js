@@ -7,11 +7,11 @@ var Rocket = /** @class */ (function () {
         this.totalCapacityKg = totalCapacityKg;
     }
     Rocket.prototype.sumMass = function (items) {
-        var totalMassOfItmes = 0;
+        var totalMassOfItems = 0;
         for (var i = 0; i < items.length; i++) {
-            totalMassOfItmes += items[i].massKg;
+            totalMassOfItems += items[i].massKg;
         }
-        return totalMassOfItmes;
+        return totalMassOfItems;
     };
     Rocket.prototype.currentMassKg = function () {
         var totalMass = this.sumMass(this.astronauts) + this.sumMass(this.cargoItems);

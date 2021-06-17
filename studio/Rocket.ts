@@ -13,11 +13,11 @@ export class Rocket{
     }
 
     sumMass(items: Payload[]): number { 
-        let totalMassOfItmes: number = 0; 
+        let totalMassOfItems: number = 0; 
         for (let i = 0; i < items.length; i++){ 
-            totalMassOfItmes += items[i].massKg; 
+            totalMassOfItems += items[i].massKg; 
         }
-        return totalMassOfItmes; 
+        return totalMassOfItems; 
     }
 
     currentMassKg(): number{ 
